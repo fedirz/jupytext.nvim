@@ -21,9 +21,9 @@ M.get_ipynb_metadata = function(filename)
       name = "python3",
     }
   end
-  local language = metadata.kernelspec.language
+  local language = kernelspec.language
   if language == nil then
-    language = language_names[metadata.kernelspec.name]
+    language = language_names[kernelspec.name]
   end
   local extension = language_extensions[language]
 
